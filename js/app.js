@@ -79,8 +79,8 @@
 
   function art(type, color) {
     const shape = SHAPES[type] || SHAPES.dress;
-    const bg = mix(color, "#f6f1ea", 0.72);
-    const bg2 = mix(color, "#f6f1ea", 0.55);
+    const bg = mix(color, "#f5efea", 0.72);
+    const bg2 = mix(color, "#f5efea", 0.55);
     const D = mix(color, "#1f1c1a", 0.28);
     const L = mix(color, "#ffffff", 0.45);
     const g = "g" + Math.random().toString(36).slice(2, 8);

@@ -3,14 +3,14 @@
    Brand colours live in :root — change them here once.
    ========================================================= */
 :root {
-  --cream: #f6f1ea;
-  --cream-2: #efe7dc;
-  --sand: #e4d6c4;
+  --cream: #f5efea;
+  --cream-2: #efe5de;
+  --sand: #e6d9cf;
   --ink: #1f1c1a;
   --ink-2: #4a4440;
   --muted: #8a817a;
-  --clay: #b5654a;
-  --clay-dark: #8f4b35;
+  --clay: #8a7360;
+  --clay-dark: #6d5a4a;
   --sage: #8c8f74;
   --line: rgba(31, 28, 26, .14);
   --white: #fffdf9;
@@ -58,7 +58,7 @@ svg { stroke: currentColor; fill: none; stroke-width: 1.4; stroke-linecap: round
 }
 .section__title em { color: var(--clay); }
 .section__title--light { color: var(--white); }
-.section__title--light em { color: #e9b9a3; }
+.section__title--light em { color: #d8c3b2; }
 
 /* ---------- Buttons ---------- */
 .btn {
@@ -125,14 +125,13 @@ svg { stroke: currentColor; fill: none; stroke-width: 1.4; stroke-linecap: round
 .nav sup, .mobile-menu sup { font-size: 8px; color: var(--clay); letter-spacing: .1em; margin-left: 2px; }
 .nav__link-hide { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; margin-right: 12px; }
 
-.logo { justify-self: center; display: block; line-height: 1; }
-.logo__img { height: 44px; width: auto; }
+.logo { justify-self: center; display: inline-flex; align-items: center; gap: 12px; line-height: 1; }
+.logo__mark { height: 44px; width: auto; }
 .logo__word {
-  font-family: var(--serif); font-weight: 500; font-size: 40px; letter-spacing: .02em;
-  line-height: 1; display: inline-block;
+  font-family: var(--serif); font-weight: 500; font-size: 22px; letter-spacing: .42em;
+  margin-right: -.42em; color: #7f6e60; line-height: 1; text-transform: lowercase;
 }
-.logo__word--lg { font-size: 72px; }
-.logo__accent { color: var(--clay); font-style: italic; }
+.footer__logo { width: 120px; height: auto; }
 .header__actions { justify-self: end; display: flex; align-items: center; gap: 2px; }
 
 /* ---------- Mobile menu ---------- */
@@ -143,7 +142,7 @@ svg { stroke: currentColor; fill: none; stroke-width: 1.4; stroke-linecap: round
 }
 .mobile-menu.open { transform: none; }
 .mobile-menu__head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 36px; }
-.mobile-menu__head .logo__word { font-size: 34px; }
+.mobile-menu__head .logo__mark { height: 38px; }
 .mobile-menu__nav { display: flex; flex-direction: column; }
 .mobile-menu__nav a { font-family: var(--serif); font-size: 32px; padding: 10px 0; border-bottom: 1px solid var(--line); }
 .mobile-menu__ig { margin-top: auto; font-size: 13px; letter-spacing: .14em; color: var(--muted); }
@@ -302,14 +301,14 @@ svg { stroke: currentColor; fill: none; stroke-width: 1.4; stroke-linecap: round
 .men {
   margin: 0 var(--gutter); border-radius: var(--radius);
   background:
-    radial-gradient(1200px 400px at 80% 0%, rgba(181,101,74,.35), transparent 60%),
+    radial-gradient(1200px 400px at 80% 0%, rgba(168,146,128,.35), transparent 60%),
     linear-gradient(135deg, #2b2724, #3d3631);
   color: var(--white); text-align: center; padding: clamp(70px, 10vw, 140px) 24px;
   max-width: calc(var(--max) - 2 * var(--gutter)); margin-inline: auto;
 }
 .men__inner { max-width: 620px; margin: 0 auto; }
 .men__title { font-family: var(--serif); font-weight: 400; font-size: clamp(56px, 9vw, 120px); line-height: .95; margin: 0 0 20px; }
-.men__title em { color: #e9b9a3; }
+.men__title em { color: #d8c3b2; }
 .men p { color: rgba(255,253,249,.75); }
 
 .inline-form { display: flex; gap: 10px; margin-top: 30px; max-width: 520px; margin-inline: auto; }
@@ -544,7 +543,8 @@ svg { stroke: currentColor; fill: none; stroke-width: 1.4; stroke-linecap: round
   .header__inner { height: 64px; }
   .header__menu { display: inline-grid; justify-self: start; }
   .nav--left { display: none; }
-  .logo__word { font-size: 32px; }
+  .logo__mark { height: 38px; }
+  .logo__word { font-size: 19px; letter-spacing: .34em; margin-right: -.34em; }
   .toolbar { top: 64px; }
   .hero { grid-template-columns: 1fr; }
   .hero__visual { max-width: 520px; width: 100%; margin: 0 auto; order: -1; }
@@ -577,7 +577,8 @@ svg { stroke: currentColor; fill: none; stroke-width: 1.4; stroke-linecap: round
   .values { grid-template-columns: 1fr; gap: 28px; }
   .inline-form { flex-direction: column; }
   .footer__bottom { flex-direction: column; gap: 6px; }
-  .logo__word--lg { font-size: 56px; }
+  .footer__logo { width: 96px; }
+  .header .logo__word { display: none; }
   .fields { grid-template-columns: 1fr; }
   .modal { padding: 0; align-items: end; }
   .modal__box { max-height: 92vh; }

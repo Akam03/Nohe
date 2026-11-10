@@ -10,9 +10,8 @@ Plain HTML/CSS/JS. No build step: open `index.html` in a browser.
 - `assets/`: logo, favicon, product photos (`assets/products/`)
 
 ## Common edits
-- **Real logo:** save it as `assets/logo.png`, then in `index.html` replace
-  `<span class="logo__word">…</span>` inside `<a class="logo">` with
-  `<img src="assets/logo.png" alt="Nohé" class="logo__img">`
+- **Logo:** `assets/logo-mark.png` (nh monogram), `assets/logo-word.png`, `assets/logo.png` (stacked, used in footer),
+  `assets/favicon.png`. Original Instagram image: `assets/logo-original.jpg`
 - **Product photos:** put them in `assets/products/` and set `image: "assets/products/name.jpg"` on the product
 - **Prices / sizes / sold-out sizes:** edit them in `js/products.js`
 - **Free-shipping threshold, shipping fee, discount codes:** top of `js/app.js`
