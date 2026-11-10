@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nohé — Women's Fashion</title>
+  <meta name="description" content="Nohé — thoughtfully made womenswear. Dresses, co-ords, tops and tailoring designed for quiet confidence." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announce">
+    <div class="announce__track">
+      <span>Free shipping on orders above ₹2,999</span><span>✦</span>
+      <span>New collection — <em>Soft Bloom</em> — now live</span><span>✦</span>
+      <span>Easy 7-day exchanges</span><span>✦</span>
+      <span>Free shipping on orders above ₹2,999</span><span>✦</span>
+      <span>New collection — <em>Soft Bloom</em> — now live</span><span>✦</span>
+      <span>Easy 7-day exchanges</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <button class="icon-btn header__menu" id="menuBtn" aria-label="Open menu">
+        <svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h12"/></svg>
+      </button>
+
+      <nav class="nav nav--left" aria-label="Primary">
+        <a href="#shop" data-filter-link="all">Women</a>
+        <a href="#men" class="nav__soon">Men <sup>soon</sup></a>
+        <a href="#shop" data-filter-link="new">New In</a>
+        <a href="#collections">Collections</a>
+      </nav>
+
+      <a href="#top" class="logo" aria-label="Nohé home">
+        <!-- To use your real logo: replace the span below with
+             <img src="assets/logo.png" alt="Nohé" class="logo__img"> -->
+        <span class="logo__word">Noh<span class="logo__accent">é</span></span>
+      </a>
+
+      <div class="header__actions">
+        <a href="#about" class="nav__link-hide">Our Story</a>
+        <button class="icon-btn" id="searchBtn" aria-label="Search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button class="icon-btn" id="wishBtn" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-9-9.2C1.6 7.4 4 4 7.4 4c2 0 3.4 1.1 4.6 2.7C13.2 5.1 14.6 4 16.6 4 20 4 22.4 7.4 21 10.8 19 15.6 12 20 12 20Z"/></svg>
+          <span class="badge" id="wishCount">0</span>
+        </button>
+        <button class="icon-btn" id="cartBtn" aria-label="Shopping bag">
+          <svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__head">
+      <span class="logo__word">Noh<span class="logo__accent">é</span></span>
+      <button class="icon-btn" data-close aria-label="Close menu"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <nav class="mobile-menu__nav">
+      <a href="#shop" data-filter-link="all">Women</a>
+      <a href="#shop" data-filter-link="new">New In</a>
+      <a href="#collections">Collections</a>
+      <a href="#men">Men <sup>coming soon</sup></a>
+      <a href="#about">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="mobile-menu__ig" href="https://www.instagram.com/in.nohe/" target="_blank" rel="noopener">@in.nohe</a>
+  </aside>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__text reveal">
+        <p class="eyebrow">Autumn / Winter ’26 — Women</p>
+        <h1 class="hero__title">Soft lines,<br/><em>quiet</em> confidence.</h1>
+        <p class="hero__lede">Nohé is womenswear made to be lived in — easy silhouettes, honest fabrics and details you notice the second time you look.</p>
+        <div class="hero__cta">
+          <a href="#shop" class="btn btn--dark">Shop the collection</a>
+          <a href="#collections" class="btn btn--ghost">Explore lookbook</a>
+        </div>
+        <div class="hero__meta">
+          <div><strong>100%</strong><span>Natural fibres</span></div>
+          <div><strong>Small</strong><span>Batch production</span></div>
+          <div><strong>7-day</strong><span>Easy exchange</span></div>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal">
+        <div class="arch arch--main" data-art="dress" data-color="#c98b6f"></div>
+        <div class="arch arch--small" data-art="top" data-color="#e7d6c3"></div>
+        <div class="hero__stamp">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+            <text><textPath href="#circ">NEW SEASON • NOHÉ • NEW SEASON • NOHÉ • </textPath></text>
+          </svg>
+          <span>✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Dresses</span><i>✦</i><span>Co-ord Sets</span><i>✦</i><span>Tops</span><i>✦</i><span>Tailoring</span><i>✦</i><span>Skirts</span><i>✦</i><span>Kurta Sets</span><i>✦</i>
+        <span>Dresses</span><i>✦</i><span>Co-ord Sets</span><i>✦</i><span>Tops</span><i>✦</i><span>Tailoring</span><i>✦</i><span>Skirts</span><i>✦</i><span>Kurta Sets</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- Categories -->
+    <section class="section" id="categories">
+      <div class="section__head reveal">
+        <p class="eyebrow">Shop by category</p>
+        <h2 class="section__title">Find your <em>everyday</em></h2>
+      </div>
+      <div class="cats">
+        <a href="#shop" class="cat reveal" data-cat="Dresses"><div class="cat__img" data-art="dress" data-color="#b9806a"></div><span>Dresses</span></a>
+        <a href="#shop" class="cat reveal" data-cat="Co-ords"><div class="cat__img" data-art="coord" data-color="#8c8f74"></div><span>Co-ord Sets</span></a>
+        <a href="#shop" class="cat reveal" data-cat="Tops"><div class="cat__img" data-art="top" data-color="#ddc7b0"></div><span>Tops</span></a>
+        <a href="#shop" class="cat reveal" data-cat="Bottoms"><div class="cat__img" data-art="skirt" data-color="#3f3a36"></div><span>Skirts &amp; Pants</span></a>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="section section--shop" id="shop">
+      <div class="section__head section__head--row reveal">
+        <div>
+          <p class="eyebrow">Women</p>
+          <h2 class="section__title">The <em>collection</em></h2>
+        </div>
+        <p class="section__note"><span id="resultCount">0</span> pieces</p>
+      </div>
+
+      <div class="toolbar reveal">
+        <div class="chips" id="catChips" role="tablist" aria-label="Filter by category"></div>
+        <div class="toolbar__right">
+          <label class="select">
+            <span>Size</span>
+            <select id="sizeFilter">
+              <option value="all">All</option>
+              <option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option>
+            </select>
+          </label>
+          <label class="select">
+            <span>Sort</span>
+            <select id="sortSelect">
+              <option value="featured">Featured</option>
+              <option value="new">Newest</option>
+              <option value="low">Price: low to high</option>
+              <option value="high">Price: high to low</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="grid" id="productGrid"></div>
+      <p class="empty" id="emptyState" hidden>No pieces match those filters yet — try another size or category.</p>
+    </section>
+
+    <!-- Lookbook / Collections -->
+    <section class="lookbook" id="collections">
+      <div class="lookbook__media reveal">
+        <div class="lookbook__tile lookbook__tile--a" data-art="blazer" data-color="#2f2b28"></div>
+        <div class="lookbook__tile lookbook__tile--b" data-art="kurta" data-color="#d7b8a0"></div>
+        <div class="lookbook__tile lookbook__tile--c" data-art="trousers" data-color="#a7a58c"></div>
+      </div>
+      <div class="lookbook__text reveal">
+        <p class="eyebrow eyebrow--light">Collection 01</p>
+        <h2 class="section__title section__title--light">Soft <em>Bloom</em></h2>
+        <p>An ode to slow mornings and long golden evenings. Breathable linens, fluid satins and hand-finished details in a palette of clay, sage and warm ivory.</p>
+        <ul class="lookbook__list">
+          <li><span>Fabrics</span>Linen, cotton poplin, satin</li>
+          <li><span>Palette</span>Clay, sage, ivory, ink</li>
+          <li><span>Pieces</span>12 limited styles</li>
+        </ul>
+        <a href="#shop" class="btn btn--light" data-filter-link="Soft Bloom">Shop Soft Bloom</a>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="values">
+      <div class="value reveal">
+        <svg viewBox="0 0 40 40"><path d="M20 5c6 6 9 11 9 16a9 9 0 0 1-18 0c0-5 3-10 9-16Z"/></svg>
+        <h3>Thoughtful fabrics</h3>
+        <p>Natural, breathable fibres chosen to feel good on skin and last for years.</p>
+      </div>
+      <div class="value reveal">
+        <svg viewBox="0 0 40 40"><path d="M8 30 30 8M14 8h16v16"/></svg>
+        <h3>Small batches</h3>
+        <p>We make limited runs to avoid waste — when a piece is gone, it's gone.</p>
+      </div>
+      <div class="value reveal">
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="12"/><path d="M14 20l4 4 8-8"/></svg>
+        <h3>Made with care</h3>
+        <p>Every garment is checked by hand before it's wrapped and sent to you.</p>
+      </div>
+      <div class="value reveal">
+        <svg viewBox="0 0 40 40"><path d="M6 14h20l8 8v6H6z"/><circle cx="12" cy="30" r="3"/><circle cx="28" cy="30" r="3"/></svg>
+        <h3>Shipped across India</h3>
+        <p>Free shipping above ₹2,999 and easy 7-day exchanges on every order.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="about__img reveal" data-art="coord" data-color="#c98b6f"></div>
+      <div class="about__text reveal">
+        <p class="eyebrow">Our story</p>
+        <h2 class="section__title">Designed by a woman,<br/><em>for every woman.</em></h2>
+        <p>Nohé started with a sketchbook and a simple idea: clothes should make you feel like the most at-ease version of yourself. No noise, no trends that expire in a month — just pieces you reach for again and again.</p>
+        <p>Each design begins with the way it moves, then the fabric, then the small details — a covered button, a softened seam, a pocket exactly where your hand falls.</p>
+        <p class="about__sign">— With love, the Nohé studio</p>
+      </div>
+    </section>
+
+    <!-- Men coming soon -->
+    <section class="men" id="men">
+      <div class="men__inner reveal">
+        <p class="eyebrow eyebrow--light">Coming soon</p>
+        <h2 class="men__title">Nohé <em>Men</em></h2>
+        <p>The same quiet philosophy, cut for him. Join the list to get first access when the menswear edit drops.</p>
+        <form class="inline-form" id="menForm">
+          <input type="email" required placeholder="Your email address" aria-label="Email address" />
+          <button class="btn btn--light" type="submit">Notify me</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="section insta">
+      <div class="section__head section__head--center reveal">
+        <p class="eyebrow">Follow along</p>
+        <h2 class="section__title"><a href="https://www.instagram.com/in.nohe/" target="_blank" rel="noopener">@in.nohe</a></h2>
+      </div>
+      <div class="insta__grid">
+        <a href="https://www.instagram.com/in.nohe/" target="_blank" rel="noopener" class="insta__item" data-art="dress" data-color="#e2cbb6"></a>
+        <a href="https://www.instagram.com/in.nohe/" target="_blank" rel="noopener" class="insta__item" data-art="blazer" data-color="#8c8f74"></a>
+        <a href="https://www.instagram.com/in.nohe/" target="_blank" rel="noopener" class="insta__item" data-art="skirt" data-color="#c98b6f"></a>
+        <a href="https://www.instagram.com/in.nohe/" target="_blank" rel="noopener" class="insta__item" data-art="top" data-color="#3f3a36"></a>
+        <a href="https://www.instagram.com/in.nohe/" target="_blank" rel="noopener" class="insta__item" data-art="kurta" data-color="#b9806a"></a>
+        <a href="https://www.instagram.com/in.nohe/" target="_blank" rel="noopener" class="insta__item" data-art="trousers" data-color="#ddc7b0"></a>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" id="contact">
+      <div class="newsletter__inner reveal">
+        <h2 class="section__title">Letters from <em>Nohé</em></h2>
+        <p>New drops, studio notes and early access — never more than twice a month. Get 10% off your first order.</p>
+        <form class="inline-form inline-form--dark" id="newsForm">
+          <input type="email" required placeholder="Your email address" aria-label="Email address" />
+          <button class="btn btn--dark" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="logo__word logo__word--lg">Noh<span class="logo__accent">é</span></span>
+        <p>Thoughtfully made womenswear.<br/>Menswear coming soon.</p>
+        <a class="footer__ig" href="https://www.instagram.com/in.nohe/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
+          @in.nohe
+        </a>
+      </div>
+      <div class="footer__col">
+        <h4>Shop</h4>
+        <a href="#shop" data-filter-link="all">All women</a>
+        <a href="#shop" data-filter-link="new">New in</a>
+        <a href="#shop" data-filter-link="Dresses">Dresses</a>
+        <a href="#shop" data-filter-link="Co-ords">Co-ord sets</a>
+        <a href="#men">Men (soon)</a>
+      </div>
+      <div class="footer__col">
+        <h4>Help</h4>
+        <a href="#" data-info="shipping">Shipping</a>
+        <a href="#" data-info="returns">Exchanges &amp; returns</a>
+        <a href="#" data-info="size">Size guide</a>
+        <a href="#" data-info="care">Garment care</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="mailto:hello@nohe.in">hello@nohe.in</a>
+        <a href="https://www.instagram.com/in.nohe/" target="_blank" rel="noopener">DM us on Instagram</a>
+        <span>Mon–Sat, 10am–7pm IST</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> Nohé. All rights reserved.</span>
+      <span>Privacy · Terms</span>
+    </div>
+  </footer>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Cart drawer -->
+  <aside class="drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping bag">
+    <div class="drawer__head">
+      <h3>Your bag <span id="cartHeadCount"></span></h3>
+      <button class="icon-btn" data-close aria-label="Close bag"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="ship-progress" id="shipProgress">
+      <p id="shipText"></p>
+      <div class="ship-progress__bar"><span id="shipBar"></span></div>
+    </div>
+    <div class="drawer__body" id="cartItems"></div>
+    <div class="drawer__foot" id="cartFoot">
+      <div class="drawer__row"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div>
+      <p class="drawer__small">Taxes included. Shipping calculated at checkout.</p>
+      <button class="btn btn--dark btn--full" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Wishlist drawer -->
+  <aside class="drawer" id="wishDrawer" aria-hidden="true" aria-label="Wishlist">
+    <div class="drawer__head">
+      <h3>Wishlist</h3>
+      <button class="icon-btn" data-close aria-label="Close wishlist"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="drawer__body" id="wishItems"></div>
+  </aside>
+
+  <!-- Product modal -->
+  <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal__box modal__box--product">
+      <button class="icon-btn modal__close" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      <div id="productModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Checkout modal -->
+  <div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal__box modal__box--checkout">
+      <button class="icon-btn modal__close" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      <div id="checkoutContent"></div>
+    </div>
+  </div>
+
+  <!-- Info modal -->
+  <div class="modal" id="infoModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal__box modal__box--info">
+      <button class="icon-btn modal__close" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      <div id="infoContent"></div>
+    </div>
+  </div>
+
+  <!-- Search -->
+  <div class="search" id="searchPanel" aria-hidden="true">
+    <div class="search__bar">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" id="searchInput" placeholder="Search dresses, co-ords, linen…" autocomplete="off" />
+      <button class="icon-btn" data-close aria-label="Close search"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="search__results" id="searchResults"></div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
